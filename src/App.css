@@ -187,14 +187,14 @@
 
 .glitch-name-text::before {
   color: var(--glitch-red);
-  transform: translateX(-1px);
+  transform: translateX(0);
   clip-path: polygon(0 0, 100% 0, 100% 34%, 0 34%);
   animation: glitch-red 4s infinite;
 }
 
 .glitch-name-text::after {
   color: var(--glitch-blue);
-  transform: translateX(1px);
+  transform: translateX(0);
   clip-path: polygon(0 58%, 100% 58%, 100% 100%, 0 100%);
   animation: glitch-blue 4s infinite;
 }
@@ -544,7 +544,7 @@
   0%,
   88%,
   100% {
-    transform: translateX(-1px);
+    transform: translateX(0);
   }
 
   90% {
@@ -560,7 +560,7 @@
   0%,
   88%,
   100% {
-    transform: translateX(1px);
+    transform: translateX(0);
   }
 
   91% {
