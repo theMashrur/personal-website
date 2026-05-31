@@ -1,0 +1,90 @@
+:root {
+  --bg-primary: #020810;
+  --bg-panel: rgba(0, 10, 20, 0.8);
+  --accent-primary: #00ffc8;
+  --text-primary: #e0f0ff;
+  --text-muted: rgba(160, 200, 240, 0.6);
+  --text-dim: rgba(120, 160, 200, 0.45);
+  --border-color: rgba(0, 255, 200, 0.15);
+  --glitch-red: rgba(255, 0, 100, 0.7);
+  --glitch-blue: rgba(0, 200, 255, 0.7);
+  --font-display: 'Orbitron';
+  --font-body: 'Share Tech Mono';
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg-primary);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(0, 255, 200, 0.08), transparent 30%),
+    linear-gradient(180deg, rgba(0, 16, 28, 0.96), rgba(2, 8, 16, 1));
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(0, 255, 200, 0.08), transparent 22%),
+    radial-gradient(circle at 80% 0%, rgba(0, 200, 255, 0.08), transparent 24%);
+  z-index: 0;
+}
+
+a,
+button {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  position: relative;
+  min-height: 100vh;
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 13.6px;
+  }
+}
