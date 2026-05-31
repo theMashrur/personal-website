@@ -294,6 +294,7 @@ function App() {
             aria-label="Primary navigation"
           >
             <PanelCorners />
+            <SectionLabel label="navigation" />
             <nav className="nav-grid">
               {navItems.map((item) => (
                 <a

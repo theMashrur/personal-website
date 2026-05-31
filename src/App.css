@@ -244,6 +244,12 @@
   padding-top: 32px;
 }
 
+.hero-panel::before,
+.nav-panel::before,
+.skill-panel::before {
+  display: none;
+}
+
 .nav-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
