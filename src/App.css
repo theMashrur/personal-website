@@ -412,6 +412,10 @@
   scroll-margin-top: 84px;
 }
 
+.content-panel::before {
+  display: none;
+}
+
 .section-copy-wrap,
 .project-list,
 .contact-stack {
