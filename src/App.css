@@ -371,11 +371,13 @@
   grid-template-columns: 120px minmax(0, 1fr);
   align-items: center;
   gap: 12px;
+  cursor: pointer;
 }
 
 .skill-label {
   min-width: 0;
   color: var(--text-muted);
+  transition: color 0.2s ease, transform 0.2s ease, text-shadow 0.2s ease;
 }
 
 .skill-label-short {
@@ -388,6 +390,7 @@
   background: rgba(224, 240, 255, 0.08);
   border: 1px solid rgba(0, 255, 200, 0.08);
   overflow: hidden;
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .skill-fill {
@@ -396,6 +399,7 @@
   height: 100%;
   background: linear-gradient(90deg, #00ffc8, rgba(0, 255, 200, 0.4));
   box-shadow: 0 0 14px rgba(0, 255, 200, 0.25);
+  transition: width 0.8s ease-out var(--delay), box-shadow 0.2s ease, filter 0.2s ease;
 }
 
 .skill-fill::after {
@@ -407,11 +411,36 @@
   height: 16px;
   background: rgba(224, 240, 255, 0.95);
   box-shadow: 0 0 16px rgba(0, 255, 200, 0.8);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+/* Attributes Hover Micro-Interactions */
+.skill-row:hover .skill-label {
+  color: var(--text-primary);
+  transform: translateX(4px);
+  text-shadow: 0 0 8px rgba(0, 255, 200, 0.3);
+}
+
+.skill-row:hover .skill-track {
+  background: rgba(0, 255, 200, 0.04);
+  border-color: rgba(0, 255, 200, 0.25);
+  box-shadow: inset 0 0 10px rgba(0, 255, 200, 0.05), 0 0 8px rgba(0, 255, 200, 0.1);
+}
+
+.skill-row:hover .skill-fill {
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.5);
+  filter: brightness(1.15);
+}
+
+.skill-row:hover .skill-fill::after {
+  transform: scaleX(1.3) scaleY(1.1);
+  background: #fff;
+  box-shadow: 0 0 24px rgba(0, 255, 200, 1), 0 0 8px #fff;
 }
 
 .skill-panel.is-animated .skill-fill {
   width: var(--value);
-  transition: width 0.8s ease-out var(--delay);
+  transition: width 0.8s ease-out var(--delay), box-shadow 0.2s ease, filter 0.2s ease;
 }
 
 .content-panel {
