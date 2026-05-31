@@ -169,8 +169,10 @@
 .glitch-name-text {
   position: relative;
   display: inline-block;
-  font-size: clamp(3.5rem, 11vw, 6.75rem);
+  max-width: 100%;
+  font-size: clamp(2.6rem, 7.6vw, 3.95rem);
   line-height: 0.95;
+  letter-spacing: 0.025em;
   color: var(--text-primary);
   text-shadow: 0 0 18px rgba(0, 255, 200, 0.2);
 }
@@ -628,6 +630,10 @@
   }
 
   .glitch-name {
-    font-size: clamp(3rem, 18vw, 4.5rem);
+    font-size: inherit;
+  }
+
+  .glitch-name-text {
+    font-size: clamp(2.55rem, 14vw, 3.6rem);
   }
 }
