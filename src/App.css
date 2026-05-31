@@ -368,7 +368,7 @@
 
 .skill-row {
   display: grid;
-  grid-template-columns: 120px minmax(0, 1fr) 44px;
+  grid-template-columns: 120px minmax(0, 1fr);
   align-items: center;
   gap: 12px;
 }
@@ -628,7 +628,7 @@
   }
 
   .skill-row {
-    grid-template-columns: 96px minmax(0, 1fr) 40px;
+    grid-template-columns: 96px minmax(0, 1fr);
   }
 
   .skill-label-full {

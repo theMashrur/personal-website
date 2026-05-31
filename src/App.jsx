@@ -335,7 +335,6 @@ function App() {
                   <div className="skill-track" aria-hidden="true">
                     <div className="skill-fill" />
                   </div>
-                  <span className="skill-value">{skill.value}</span>
                 </div>
               ))}
             </div>
