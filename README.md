@@ -1,6 +1,6 @@
 # Mashrur Personal Website
 
-Single-page React + Vite personal website for Mashrur, designed as a cyberpunk game-menu interface for quantitative development, research, and project work.
+Single-page React + Vite personal website, designed as a cyberpunk game-menu interface for a personal website
 
 ## Local development
 
